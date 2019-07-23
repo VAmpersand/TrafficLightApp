@@ -15,9 +15,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var greenColor: UIView!
     @IBOutlet weak var switchButton: UIButton!
     
-    var redColorOff = true
-    var yellowColorOff = true
-    var greenColorOff = true
+    var redLightOff = true
+    var yellowLightOff = true
+    var greenLightOff = true
     
     override func viewDidAppear(_ animated: Bool) {
     
@@ -32,34 +32,34 @@ class ViewController: UIViewController {
     
     @IBAction func nextColor(_ sender: UIButton) {
         
-        if redColorOff && yellowColorOff && greenColorOff {
+        if redLightOff && yellowLightOff && greenLightOff {
             redColor.alpha = 1
-            redColorOff = false
+            redLightOff = false
             switchButton.setTitle("NEXT", for: .normal)
             return
         }
         
-        guard redColorOff else {
+        guard redLightOff else {
             redColor.alpha = 0.3
-            redColorOff = true
+            redLightOff = true
             yellowColor.alpha = 1
-            yellowColorOff = false
+            yellowLightOff = false
             return
         }
         
-        guard yellowColorOff else {
+        guard yellowLightOff else {
             yellowColor.alpha = 0.3
-            yellowColorOff = true
+            yellowLightOff = true
             greenColor.alpha = 1
-            greenColorOff = false
+            greenLightOff = false
             return
         }
         
-        guard greenColorOff else {
+        guard greenLightOff else {
             greenColor.alpha = 0.3
-            greenColorOff = true
+            greenLightOff = true
             redColor.alpha = 1
-            redColorOff = false
+            redLightOff = false
             return
         }
     }
