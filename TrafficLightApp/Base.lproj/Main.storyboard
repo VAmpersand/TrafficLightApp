@@ -19,51 +19,51 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IjD-w9-vKf">
-                                <rect key="frame" x="107.66666666666669" y="298" width="150" height="150"/>
+                                <rect key="frame" x="104.33333333333333" y="292.33333333333331" width="156.33333333333337" height="156.33333333333331"/>
                                 <color key="backgroundColor" red="0.84649258852005005" green="0.91255694627761841" blue="0.31779929995536804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="IjD-w9-vKf" secondAttribute="height" multiplier="1:1" id="d2L-Di-zQm"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A4x-rT-alx">
-                                <rect key="frame" x="107.66666666666669" y="500" width="150" height="150"/>
+                                <rect key="frame" x="104.33333333333333" y="500.66666666666669" width="156.33333333333337" height="156.33333333333331"/>
                                 <color key="backgroundColor" red="0.087244974069999995" green="0.55429092639999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="A4x-rT-alx" secondAttribute="height" multiplier="1:1" id="6VM-A1-VLm"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wpw-o2-GWy">
-                                <rect key="frame" x="107.66666666666669" y="96" width="150" height="150"/>
-                                <color key="backgroundColor" red="0.55429092639999999" green="0.0061077390000000001" blue="0.03307971925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Wpw-o2-GWy" secondAttribute="height" multiplier="1:1" id="QXu-ju-INy"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="UnV-Rk-pvA"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGL-Vr-lEs">
-                                <rect key="frame" x="89" y="692" width="189" height="39"/>
+                                <rect key="frame" x="89" y="699" width="189" height="39"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="189" id="gKt-GF-u0e"/>
                                     <constraint firstAttribute="height" constant="39" id="yFV-v8-ShP"/>
                                 </constraints>
-                                <state key="normal" title="Switch color">
+                                <state key="normal" title="START">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="nextColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J8H-lP-mCG"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wpw-o2-GWy">
+                                <rect key="frame" x="104.33333333333333" y="84.000000000000014" width="156.33333333333337" height="156.33333333333337"/>
+                                <color key="backgroundColor" red="0.55429092639999999" green="0.0061077390000000001" blue="0.03307971925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Wpw-o2-GWy" secondAttribute="height" multiplier="1:1" id="QXu-ju-INy"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="UnV-Rk-pvA"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="IjD-w9-vKf" firstAttribute="width" secondItem="Wpw-o2-GWy" secondAttribute="width" id="1eI-5r-qdM"/>
                             <constraint firstItem="A4x-rT-alx" firstAttribute="height" secondItem="IjD-w9-vKf" secondAttribute="height" id="3Z6-Br-l7r"/>
-                            <constraint firstItem="Wpw-o2-GWy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="Apf-mm-wpj"/>
+                            <constraint firstItem="Wpw-o2-GWy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" priority="999" constant="40" id="Apf-mm-wpj"/>
                             <constraint firstItem="IjD-w9-vKf" firstAttribute="height" secondItem="Wpw-o2-GWy" secondAttribute="height" id="BGj-Ts-itY"/>
                             <constraint firstItem="IjD-w9-vKf" firstAttribute="top" secondItem="Wpw-o2-GWy" secondAttribute="bottom" constant="52" id="CGg-Tw-yc4"/>
                             <constraint firstItem="A4x-rT-alx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-5" id="D6J-vP-XSN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nGL-Vr-lEs" secondAttribute="bottom" constant="47" id="EcY-3N-MZp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nGL-Vr-lEs" secondAttribute="bottom" priority="999" constant="40" id="EcY-3N-MZp"/>
                             <constraint firstItem="Wpw-o2-GWy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-5" id="F7Y-0U-CpZ"/>
                             <constraint firstItem="IjD-w9-vKf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-5" id="LVy-ye-uvM"/>
                             <constraint firstItem="nGL-Vr-lEs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-4" id="WVh-R3-NxS"/>
@@ -76,6 +76,7 @@
                     <connections>
                         <outlet property="greenColor" destination="A4x-rT-alx" id="HQE-Pu-ncu"/>
                         <outlet property="redColor" destination="Wpw-o2-GWy" id="RGP-X4-MFu"/>
+                        <outlet property="switchButton" destination="nGL-Vr-lEs" id="dLP-lI-kVR"/>
                         <outlet property="yellowColor" destination="IjD-w9-vKf" id="Wys-70-aAg"/>
                     </connections>
                 </viewController>
